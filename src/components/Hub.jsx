@@ -14,7 +14,7 @@ const Hub = ({ games, onPlay, onViewGlobal }) => {
     <div className="container" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <nav className="hub-nav">
         <div className="brand-area">
-          <img src="/project-logo-cpt.png" alt="Logo CPT" className="project-logo" />
+          <img src={`${import.meta.env.BASE_URL}project-logo-cpt.png`} alt="Logo CPT" className="project-logo" />
           <h1 className="brand-title">Computação para Todos <span style={{color: 'var(--primary-color)'}}>-- MINIGAMES--</span></h1>
         </div>
         <button className="btn-primary" onClick={onViewGlobal}>
@@ -101,8 +101,8 @@ const Hub = ({ games, onPlay, onViewGlobal }) => {
         <div className="footer-content">
           <p className="footer-label">REALIZAÇÃO</p>
           <div className="footer-logos">
-            <img src="/ufla_logo.gif" alt="UFLA" className="footer-logo" />
-            <img src="/institutos_logo.jpg" alt="Institutos" className="footer-logo" />
+            <img src={`${import.meta.env.BASE_URL}ufla_logo.gif`} alt="UFLA" className="footer-logo" />
+            <img src={`${import.meta.env.BASE_URL}institutos_logo.jpg`} alt="Institutos" className="footer-logo" />
           </div>
         </div>
       </footer>
