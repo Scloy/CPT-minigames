@@ -6,7 +6,7 @@ const PARTS_DATA = [
   { 
     id: 'motherboard', 
     name: 'Placa Mãe', 
-    img: '/pc_motherboard_clean_1778865173186.png',
+    img: `${import.meta.env.BASE_URL}pc_motherboard_clean_1778865173186.png`,
     pos: { top: '15%', left: '20%', width: '60%', height: '70%' },
     question: "A Placa Mãe é responsável por:",
     options: ["Gerar eletricidade", "Conectar todos os componentes entre si", "Aumentar o brilho da tela", "Armazenar o Windows"],
@@ -16,7 +16,7 @@ const PARTS_DATA = [
   { 
     id: 'psu', 
     name: 'Fonte de Alimentação', 
-    img: '/pc_psu_photo.png',
+    img: `${import.meta.env.BASE_URL}pc_psu_photo.png`,
     pos: { top: '75%', left: '10%', width: '25%', height: '20%' },
     question: "A principal função da Fonte (PSU) é:",
     options: ["Resfriar o processador", "Transformar e distribuir energia", "Conectar o Wi-Fi", "Processar textos"],
@@ -26,7 +26,7 @@ const PARTS_DATA = [
   { 
     id: 'cpu', 
     name: 'CPU (Processador)', 
-    img: '/pc_cpu_photo_1778865340517.png',
+    img: `${import.meta.env.BASE_URL}pc_cpu_photo_1778865340517.png`,
     pos: { top: '35%', left: '44%', width: '12%', height: '12%' },
     question: "Onde o Processador deve ser encaixado?",
     options: ["No Slot PCI", "No Soquete da Placa Mãe", "Na entrada USB", "Direto na tomada"],
@@ -36,7 +36,7 @@ const PARTS_DATA = [
   { 
     id: 'ram', 
     name: 'Memória RAM', 
-    img: '/pc_ram_photo_1778865407685.png',
+    img: `${import.meta.env.BASE_URL}pc_ram_photo_1778865407685.png`,
     pos: { top: '25%', left: '58%', width: '3%', height: '25%' },
     question: "A Memória RAM é do tipo:",
     options: ["Permanente", "Volátil (temporária)", "Magnetizada", "Óptica"],
@@ -46,7 +46,7 @@ const PARTS_DATA = [
   { 
     id: 'ssd', 
     name: 'SSD NVMe', 
-    img: '/pc_ssd_photo_1778865468132.png',
+    img: `${import.meta.env.BASE_URL}pc_ssd_photo_1778865468132.png`,
     pos: { top: '55%', left: '58%', width: '15%', height: '4%' },
     question: "O SSD armazena dados de forma:",
     options: ["Digital e permanente", "Analógica", "Temporária", "Por vapor"],
@@ -56,7 +56,7 @@ const PARTS_DATA = [
   { 
     id: 'gpu', 
     name: 'Placa de Vídeo (GPU)', 
-    img: '/pc_gpu_photo_1778865385654.png',
+    img: `${import.meta.env.BASE_URL}pc_gpu_photo_1778865385654.png`,
     pos: { top: '65%', left: '25%', width: '45%', height: '12%' },
     question: "A GPU é especializada em:",
     options: ["Cálculos matemáticos simples", "Processamento gráfico intenso", "Impressão de documentos", "Gerenciar o mouse"],
@@ -137,7 +137,7 @@ const PCBuilder = ({ onFinish, playerName, onCancel }) => {
         <div className="pc-builder-container">
           <div className="motherboard-view" style={{ position: 'relative', background: '#e5e7eb', borderRadius: '16px', overflow: 'hidden' }}>
             {/* Imagem do GABINETE como fundo principal */}
-            <img src="/pc_case_interior.png" className="motherboard-img" alt="Gabinete" style={{ opacity: 0.8 }} />
+            <img src={`${import.meta.env.BASE_URL}pc_case_interior.png`} className="motherboard-img" alt="Gabinete" style={{ opacity: 0.8 }} />
             
             {PARTS_DATA.map(part => (
               <div 
