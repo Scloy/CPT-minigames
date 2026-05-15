@@ -1,0 +1,13 @@
+COMO EXECUTAR O JOGO
+-------------------
+
+1. Certifique-se de que você tem o Python instalado no seu computador.
+2. Extraia todos os arquivos deste ZIP para uma pasta.
+3. Clique duas vezes no arquivo 'start_game.py' ou execute no terminal:
+   python start_game.py
+
+O jogo abrirá automaticamente no seu navegador padrão no endereço:
+http://localhost:8000
+
+Bom divertimento!
+Equipe Computação para Todos (CPT)
